@@ -171,7 +171,7 @@ Wire Wire Line
 	850  3500 850  3050
 Connection ~ 850  3500
 Wire Wire Line
-	850  3500 1850 3500
+	850  3500 1800 3500
 Wire Wire Line
 	2250 3500 2300 3500
 Wire Wire Line
@@ -409,4 +409,19 @@ Wire Wire Line
 	2050 3700 2350 3700
 Wire Wire Line
 	2300 3400 2550 3400
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EABB6D6
+P 1800 3600
+F 0 "R?" V 2000 3600 50  0000 C CNN
+F 1 "10K" V 1900 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1800 3600 50  0001 C CNN
+F 3 "~" H 1800 3600 50  0001 C CNN
+	1    1800 3600
+	-1   0    0    1   
+$EndComp
+Connection ~ 1800 3700
+Connection ~ 1800 3500
+Wire Wire Line
+	1800 3500 1850 3500
 $EndSCHEMATC
