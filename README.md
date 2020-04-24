@@ -6,4 +6,4 @@ The attiny85 monitors the battery voltage and turns off the P-Channel MOSFET whe
 
 Once the P-Channel MOSFET has been turned off, it won't turn on again until the ACC line becomes live again.  This will only happen when starting the car.
 
-![Schematic](https://gitea.simcop2387.info/simcop2387/Radio-Power/raw/branch/master/Radio-Power.svg)
+![Schematic](https://gitea.simcop2387.info/simcop2387/Radio-Power/raw/branch/master/Radio-Power.png)
