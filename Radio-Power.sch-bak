@@ -267,17 +267,6 @@ F 3 "" H 4100 2850 50  0001 C CNN
 	1    4100 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L7805 U1
-U 1 1 5EA25C90
-P 2750 2850
-F 0 "U1" H 2750 3092 50  0000 C CNN
-F 1 "L7805" H 2750 3001 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2775 2700 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2750 2800 50  0001 C CNN
-	1    2750 2850
-	1    0    0    -1  
-$EndComp
 Connection ~ 2300 2850
 Wire Wire Line
 	5550 3050 5550 3100
@@ -385,7 +374,7 @@ Connection ~ 2050 3700
 Wire Wire Line
 	2050 3700 2350 3700
 Wire Wire Line
-	2300 2850 2450 2850
+	2300 2850 2400 2850
 $Comp
 L Device:R_Small_US R10
 U 1 1 5EABB6D6
@@ -409,12 +398,12 @@ Connection ~ 2300 2550
 Wire Wire Line
 	2300 2550 2300 2850
 $Comp
-L Device:CP C?
+L Device:CP C3
 U 1 1 5EA3F089
 P 4250 2700
-F 0 "C?" H 4350 2700 50  0000 L CNN
+F 0 "C3" H 4350 2700 50  0000 L CNN
 F 1 "1uF" H 4350 2600 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P3.50mm" H 4288 2550 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 4288 2550 50  0001 C CNN
 F 3 "~" H 4250 2700 50  0001 C CNN
 	1    4250 2700
 	1    0    0    -1  
@@ -433,12 +422,12 @@ Connection ~ 3150 2850
 Wire Wire Line
 	3400 2850 3400 3050
 $Comp
-L Device:CP C?
+L Device:CP C1
 U 1 1 5EA99D67
 P 3850 3450
-F 0 "C?" H 3950 3450 50  0000 L CNN
+F 0 "C1" H 3950 3450 50  0000 L CNN
 F 1 "1uF" H 3950 3350 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P3.50mm" H 3888 3300 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3888 3300 50  0001 C CNN
 F 3 "~" H 3850 3450 50  0001 C CNN
 	1    3850 3450
 	1    0    0    -1  
@@ -457,4 +446,31 @@ Wire Wire Line
 	4700 3600 4950 3600
 Wire Wire Line
 	3200 4150 4700 4150
+$Comp
+L Regulator_Linear:LM2936-5.0_TO92 U1
+U 1 1 5EA4721F
+P 2750 2850
+F 0 "U1" H 2750 3092 50  0000 C CNN
+F 1 "LM2936-5.0_TO92" H 2750 3001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2750 3075 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2936.pdf" H 2750 2800 50  0001 C CNN
+	1    2750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EA5B7CA
+P 2400 3000
+F 0 "C?" H 2500 3000 50  0000 L CNN
+F 1 "100nF" H 2500 2900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P3.50mm" H 2438 2850 50  0001 C CNN
+F 3 "~" H 2400 3000 50  0001 C CNN
+	1    2400 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 2850
+Wire Wire Line
+	2400 2850 2450 2850
+Wire Wire Line
+	2400 3150 2750 3150
 $EndSCHEMATC
